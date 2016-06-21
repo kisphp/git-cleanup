@@ -3,6 +3,7 @@
   "type": "application",
   "description": "Remove merged branches from local",
   "minimum-stability": "dev",
+  "license": "MIT",
   "authors": [
     {
       "name": "Marius-Bogdan Rizac",
