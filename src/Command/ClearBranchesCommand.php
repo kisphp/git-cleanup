@@ -19,5 +19,4 @@ class ClearBranchesCommand extends Command
     {
         $output->writeln('hello world, remove branches');
     }
-
 }
