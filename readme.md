@@ -8,6 +8,9 @@
 [![License](https://poser.pugx.org/kisphp/git-cleanup/license)](https://packagist.org/packages/kisphp/git-cleanup)
 [![Monthly Downloads](https://poser.pugx.org/kisphp/git-cleanup/d/monthly)](https://packagist.org/packages/kisphp/git-cleanup)
 
+# create phar
+https://www.sitepoint.com/packaging-your-apps-with-phar/
+
 ## Requirements
 
 To run this tool you need to have at least PHP 5.5.9
