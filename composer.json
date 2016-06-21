@@ -1,5 +1,5 @@
 {
-  "name": "kisphp/git-clean-branches",
+  "name": "kisphp/git-cleanup",
   "type": "application",
   "description": "Remove merged branches from local",
   "minimum-stability": "dev",
