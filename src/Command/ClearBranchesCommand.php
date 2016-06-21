@@ -3,8 +3,6 @@
 namespace Kisphp\Command;
 
 use Cilex\Command\Command;
-use Kisphp\Core\ColorText;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -49,6 +47,7 @@ class ClearBranchesCommand extends Command
     /**
      * @param InputInterface $input
      * @param OutputInterface $output
+     *
      * @return void
      */
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -62,11 +61,12 @@ class ClearBranchesCommand extends Command
 
     /**
      * @param string $branch
+     *
      * @return bool
      */
     protected function displayOrExecute(InputInterface $input, OutputInterface $output, $branch)
     {
-        $command = "git branch -D %s";
+        $command = 'git branch -D %s';
 
         if ($input->getOption('force')) {
             $output->write('<question>Executing</question>: ');
@@ -119,6 +119,7 @@ class ClearBranchesCommand extends Command
     /**
      * @param array $branches
      * @param bool|false $isRemote
+     *
      * @return array
      */
     private function filterBranches(array $branches, $isRemote = false)
@@ -148,6 +149,7 @@ class ClearBranchesCommand extends Command
     /**
      * @param InputInterface $input
      * @param OutputInterface $output
+     *
      * @return bool
      */
     public function runCommand(InputInterface $input, OutputInterface $output)
